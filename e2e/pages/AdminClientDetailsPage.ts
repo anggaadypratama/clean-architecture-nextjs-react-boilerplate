@@ -1,6 +1,6 @@
 import { expect, Page } from '@playwright/test';
 
-import { verifyScreen } from '../consts/e2e.helpers';
+import { verifyScreen } from '../common/consts/e2e.helpers';
 
 export const AdminClientDetailsPage = (page: Page) => ({
   async verifyClientDetailsScreen() {

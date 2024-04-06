@@ -13,6 +13,5 @@ export const clientRestToClientDomain = ({
   email,
 });
 
-export const clientsRestToClientsDomain = (clients: ClientRest[]): Client[] => {
-  return clients.map((clientRest) => clientRestToClientDomain(clientRest));
-};
+export const clientsRestToClientsDomain = (clients: ClientRest[]): Client[] =>
+  clients.map?.((clientRest) => clientRestToClientDomain(clientRest)) || [];

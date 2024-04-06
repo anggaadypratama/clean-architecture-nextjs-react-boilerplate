@@ -5,7 +5,7 @@ import { RxDotsVertical } from 'react-icons/rx';
 import React from 'react';
 
 import { ListRow } from 'ui/common/components/tables/ListRow/ListRow';
-import styles from 'ui/Clients/Admin/Client/components/ClientPackagesList/clientPackagesList.module.scss';
+
 import { getPackageStatusIcon } from 'ui/Packages/Admin/packages.partials';
 
 import { Container } from 'ui/common/components/layout/Container/Container';
@@ -14,6 +14,9 @@ import { ContainerHeader } from 'ui/common/components/typography/ContainerHeader
 import { useClientPackagesList } from 'ui/Clients/Admin/Client/components/ClientPackagesList/clientPackagesList.hooks';
 import { PRODUCTS_TEXT_HEADER } from 'ui/Clients/Admin/Client/components/ClientPackagesList/clientPackagesList.dictionary';
 
+import styles from 'ui/Clients/Admin/Client/components/ClientPackagesList/clientPackagesList.module.scss';
+
+/** @scope src/ui/Clients/Admin/Client */
 export const ClientPackagesList = () => {
   const { packages, isPackageSelected, onRowClick } = useClientPackagesList();
 

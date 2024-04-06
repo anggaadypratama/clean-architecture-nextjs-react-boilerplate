@@ -10,7 +10,7 @@ import { WidgetNew } from 'ui/common/components/layout/Widget/WidgetNew/WidgetNe
 import { WidgetContent } from 'ui/common/components/layout/Widget/WidgetContent/WidgetContent';
 import { WidgetSubHeader } from 'ui/common/components/typography/WidgetSubHeader/WidgetSubHeader';
 import { WidgetHeader } from 'ui/common/components/typography/WidgetHeader/WidgetHeader';
-import styles from 'ui/Clients/Admin/Client/components/ClientPackagesList/clientPackagesList.module.scss';
+
 import { WidgetDelivery } from 'ui/common/components/layout/Widget/WidgetDelivery/WidgetDelivery';
 
 import { WidgetAttention } from 'ui/common/components/layout/Widget/WidgetAttention/WidgetAttention';
@@ -24,16 +24,19 @@ import {
   NEW_TODAY_TEXT_HEADER,
 } from 'ui/Clients/Admin/Client/components/ClientWidgets/clientWidgets.dictionary';
 
-export type Props = {
+import styles from 'ui/Clients/Admin/Client/components/ClientPackagesList/clientPackagesList.module.scss';
+
+type Props = {
   clientId: string;
 };
-export const ClientWidgets = async (props: Props) => {
+/** @scope src/ui/Clients/Admin/Client */
+export const ClientWidgets = async ({ clientId }: Props) => {
   const {
     packagesRequiresAttention,
     packagesInTransit,
     deliveredPackages,
     recentPackages,
-  } = await useClientWidgets(props);
+  } = await useClientWidgets({ clientId });
 
   return (
     <>

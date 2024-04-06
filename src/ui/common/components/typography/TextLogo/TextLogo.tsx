@@ -1,6 +1,6 @@
-import styles from 'ui/common/components/typography/TextLogo/textLogo.module.scss';
-
 import { pacifico } from 'ui/common/assets/fonts/fonts';
+
+import styles from 'ui/common/components/typography/TextLogo/textLogo.module.scss';
 
 type Props = {
   children: React.ReactNode;

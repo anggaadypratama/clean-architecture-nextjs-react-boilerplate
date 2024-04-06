@@ -26,7 +26,6 @@ export const PackagesRepository = ({
     if (status !== 200) {
       throw Error('TODO ERROR HANDLING');
     }
-
     return packagesRestToPackagesDomain(data);
   },
   getPackage: async ({ packageId }: GetPackageRepositoryRequest) => {

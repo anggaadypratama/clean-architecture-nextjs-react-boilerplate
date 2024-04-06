@@ -5,6 +5,7 @@ type UseClientsList = {
   clients: Client[];
 };
 
+/** @scope src/ui/Clients/Admin/Clients/components/ClientsList */
 export const useClientsList = async (): Promise<UseClientsList> => {
   const { getClients } = useClientsListData();
 

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { TextRegular } from 'ui/common/components/typography/TextRegular/TextRegular';
+
 import styles from 'ui/common/components/typography/WidgetSubHeader/widgetSubHeader.module.scss';
 
 type Props = {

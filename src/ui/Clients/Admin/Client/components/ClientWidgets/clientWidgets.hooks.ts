@@ -1,6 +1,5 @@
 import { Package } from 'presentation/shared/Packages/models/Package';
 import { useClientData } from 'ui/Clients/Admin/Client/client.data';
-import { Props } from 'ui/Clients/Admin/Client/components/ClientWidgets/ClientWidgets';
 
 type UseClientWidgets = {
   packagesRequiresAttention: number;
@@ -8,9 +7,14 @@ type UseClientWidgets = {
   packagesInTransit: number;
   deliveredPackages: number;
 };
+
+type UseClientWidgetsInput = {
+  clientId: string;
+};
+/** @scope src/ui/Clients/Admin/Client/components/ClientWidgets */
 export const useClientWidgets = async ({
   clientId,
-}: Props): Promise<UseClientWidgets> => {
+}: UseClientWidgetsInput): Promise<UseClientWidgets> => {
   const { getClientPackages } = useClientData();
 
   const packages = await getClientPackages(clientId);

@@ -10,6 +10,7 @@ type UseClientPackagesList = {
   onRowClick: (packageId: string) => () => void;
   isPackageSelected: (packageId: string) => boolean;
 };
+/** @scope src/ui/Clients/Admin/Client/components/ClientPackagesList */
 export const useClientPackagesList = (): UseClientPackagesList => {
   const initialPackagesSelection = useRef<Record<string, boolean>>({});
   const [packages, setPackages] = useState<Package[]>([]);

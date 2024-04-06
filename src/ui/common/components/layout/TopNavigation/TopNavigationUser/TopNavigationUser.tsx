@@ -4,12 +4,13 @@ import { useTopNavigationUser } from 'ui/common/components/layout/TopNavigation/
 import { latoBold } from 'ui/common/assets/fonts/fonts';
 import { Pill } from 'ui/common/components/pills/Pill/Pill';
 
-import topNavigationStyles from 'ui/common/components/layout/TopNavigation/topNavigation.module.scss';
-import styles from 'ui/common/components/layout/TopNavigation/TopNavigationUser/topNavigationUser.module.scss';
 import {
   HELLO_TEXT,
   USER_ROLE_TEXT,
 } from 'ui/common/components/layout/TopNavigation/TopNavigationUser/TopNavigationUser.dictionary';
+
+import topNavigationStyles from 'ui/common/components/layout/TopNavigation/topNavigation.module.scss';
+import styles from 'ui/common/components/layout/TopNavigation/TopNavigationUser/topNavigationUser.module.scss';
 
 export const TopNavigationUser = async () => {
   const { session } = await useTopNavigationUser();

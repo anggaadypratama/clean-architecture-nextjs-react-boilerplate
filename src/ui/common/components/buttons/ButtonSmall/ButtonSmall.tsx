@@ -1,7 +1,8 @@
 import React from 'react';
 
-import styles from 'ui/common/components/buttons/ButtonSmall/buttonSmall.module.scss';
 import { Button } from 'ui/common/components/buttons/Button/Button';
+
+import styles from 'ui/common/components/buttons/ButtonSmall/buttonSmall.module.scss';
 
 type Props = {
   className?: string;

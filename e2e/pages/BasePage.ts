@@ -4,7 +4,7 @@ import {
   getAccountForRole,
   getScreenRoute,
   verifyScreen,
-} from '../consts/e2e.helpers';
+} from '../common/consts/e2e.helpers';
 
 export const BasePage = (page: Page) => ({
   async authenticateAsRole(role: string) {
@@ -13,7 +13,7 @@ export const BasePage = (page: Page) => ({
     await page.getByTestId('login').fill(getAccountForRole(role));
     await page.getByTestId('password').fill('123');
     await page.getByTestId('signIn').click();
-    await expect(page.getByTestId('user-role')).toContainText('admin');
+    await expect(page.getByText("You're admin")).toBeVisible();
   },
 
   async goToScreen(screen: string) {

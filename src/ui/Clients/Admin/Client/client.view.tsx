@@ -13,6 +13,7 @@ import { CLIENT_SECTION_HEADER_TEXT } from 'ui/Clients/Admin/Client/client.dicti
 type Props = {
   clientId: string;
 };
+
 export const ClientView = ({ clientId }: Props) => (
   <>
     <PageHeader testId="clientDetailsScreen">

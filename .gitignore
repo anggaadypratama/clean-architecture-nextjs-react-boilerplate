@@ -43,3 +43,5 @@ qodana.yaml
 .stryker-tmp
 
 /reports
+
+*storybook.log

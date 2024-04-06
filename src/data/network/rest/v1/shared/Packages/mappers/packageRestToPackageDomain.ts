@@ -16,6 +16,6 @@ export const packageRestToPackageDomain = ({
 
 export const packagesRestToPackagesDomain = (
   packages: PackageRest[]
-): Package[] => {
-  return packages.map((packageRest) => packageRestToPackageDomain(packageRest));
-};
+): Package[] =>
+  packages.map?.((packageRest) => packageRestToPackageDomain(packageRest)) ||
+  [];

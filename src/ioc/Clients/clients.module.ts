@@ -67,4 +67,5 @@ const initializeModule = (bind: interfaces.Bind) => {
   );
 };
 
+/** @scope src/ioc */
 export const ClientsModule = new ContainerModule(initializeModule);

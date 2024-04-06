@@ -227,13 +227,20 @@ This mapper is for preparing Domain data format into specific presentation data 
 from UI / Presentation data format. If you plan to use `dataStore` layer then you can combine `domain` + `dataStore` data 
 into one `presentation` model for specific screen
 
+##### Scoping - Public / Private access interface
+
+It's a simple pattern for better access control within domains and folders. Sometimes we want to just keep some files accessible
+within given package. To achieve that we are using scopes.
+
 ### KNOWN ISSUES
 
 * Order of stylesheets combined with routing - [GitHub Issue here](https://github.com/vercel/next.js/issues/13092)
-* Routing problem and jsx loading https://github.com/vercel/next.js/issues/60909
+  * After update to `14.2.0-canary.60` canary version seems like styling issue related to order has been resolved, but 
+  * there is different issue now - sometimes styles are not loaded for some components and user needs to refresh
 * Slow routes loading https://github.com/vercel/next.js/issues/61259
 * There are still some weird issues over authentication...
 * Project is sometimes still unstable, it's crashing here and there. I'll try to correct it in a free moment
+  * Applied some patches to gracefully handle crashes due to lack of mocked data
 
 ### STILL TODO
 

@@ -8,4 +8,5 @@ const { fetchClients } = inject<IClientsPresenter>(
   PresentationModuleSymbols.CLIENTS_PRESENTER
 );
 
+/** @scope src/ui/Clients/Admin/Clients/components/ClientsList */
 export { fetchClients };

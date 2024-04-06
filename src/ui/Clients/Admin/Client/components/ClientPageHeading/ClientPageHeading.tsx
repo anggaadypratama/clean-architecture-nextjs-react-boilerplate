@@ -3,11 +3,12 @@ import React from 'react';
 import { PageHeading } from 'ui/common/components/layout/Page/PageHeading/PageHeading';
 import { useClientPageHeading } from 'ui/Clients/Admin/Client/components/ClientPageHeading/clientPageHeading.hooks';
 
-export type Props = {
+type Props = {
   clientId: string;
 };
-export const ClientPageHeading = async (props: Props) => {
-  const { client } = await useClientPageHeading(props);
+/** @scope src/ui/Clients/Admin/Client */
+export const ClientPageHeading = async ({ clientId }: Props) => {
+  const { client } = await useClientPageHeading({ clientId });
 
   return (
     <PageHeading>

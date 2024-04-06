@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 
 import { nunitoRegular } from 'ui/common/assets/fonts/fonts';
+
 import styles from 'ui/common/components/typography/ContainerHeader/containerHeader.module.scss';
 
 type Props = {

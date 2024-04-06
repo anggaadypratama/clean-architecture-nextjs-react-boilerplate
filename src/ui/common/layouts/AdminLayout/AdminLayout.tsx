@@ -1,9 +1,9 @@
 import React, { ReactNode } from 'react';
 
-import styles from 'ui/common/layouts/shared/layout.module.scss';
-
 import { SideNavigation } from 'ui/common/components/layout/SideNavigation/SideNavigation';
 import { TopNavigation } from 'ui/common/components/layout/TopNavigation/TopNavigation';
+
+import styles from 'ui/common/layouts/shared/layout.module.scss';
 
 type Props = {
   children: ReactNode;

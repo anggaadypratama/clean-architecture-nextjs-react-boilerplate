@@ -1,7 +1,8 @@
 import { ReactNode } from 'react';
 
-import styles from 'ui/common/components/layout/Page/PageHeading/pageHeading.module.scss';
 import { nunitoLight } from 'ui/common/assets/fonts/fonts';
+
+import styles from 'ui/common/components/layout/Page/PageHeading/pageHeading.module.scss';
 
 type Props = {
   className?: string;

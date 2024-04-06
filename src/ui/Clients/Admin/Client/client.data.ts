@@ -10,6 +10,7 @@ type UseClientData = {
   getClientPackages: (clientId: string) => Promise<Package[]>;
 };
 
+/** @scope src/ui/Clients/Admin/Client */
 export const useClientData = (): UseClientData => {
   const getClient = async (clientId: string) => {
     return fetchClient({ clientId });

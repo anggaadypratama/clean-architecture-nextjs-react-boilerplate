@@ -7,7 +7,6 @@ import { FieldPassword } from 'ui/common/components/fields/FieldPassword/FieldPa
 import { PrimaryButton } from 'ui/common/components/buttons/PrimaryButton/PrimaryButton';
 import { useLoginForm } from 'ui/Login/components/LoginForm/loginForm.hooks';
 
-import styles from 'ui/Login/login.module.scss';
 import {
   FIELD_PLACEHOLDER_EMAIL_TEXT,
   FIELD_PLACEHOLDER_PASSWORD_TEXT,
@@ -17,6 +16,8 @@ import {
   LOGIN_FIELD,
   PASSWORD_FIELD,
 } from 'ui/Login/components/LoginForm/loginForm.consts';
+
+import styles from 'ui/Login/login.module.scss';
 
 export const LoginForm = () => {
   const { onSubmit } = useLoginForm();

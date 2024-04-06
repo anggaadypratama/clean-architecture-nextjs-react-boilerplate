@@ -37,4 +37,5 @@ const initializeModule = (bind: interfaces.Bind) => {
   );
 };
 
+/** @scope src/ioc */
 export const AuthenticationModule = new ContainerModule(initializeModule);

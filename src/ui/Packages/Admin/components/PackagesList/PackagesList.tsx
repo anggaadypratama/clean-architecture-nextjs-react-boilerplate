@@ -6,12 +6,14 @@ import React from 'react';
 
 import { usePackagesList } from 'ui/Packages/Admin/components/PackagesList/packagesList.hooks';
 import { ListRow } from 'ui/common/components/tables/ListRow/ListRow';
-import styles from 'ui/Packages/Admin/packages.module.scss';
+
 import { getPackageStatusIcon } from 'ui/Packages/Admin/packages.partials';
 import { Container } from 'ui/common/components/layout/Container/Container';
 import { ContainerHeader } from 'ui/common/components/typography/ContainerHeader/ContainerHeader';
 import { Package } from 'presentation/shared/Packages/models/Package';
 import { PRODUCTS_TEXT_HEADER } from 'ui/Packages/Admin/components/PackagesList/packagesList.dictionary';
+
+import styles from 'ui/Packages/Admin/packages.module.scss';
 
 export const PackagesList = () => {
   const { packages, onRowClick, isPackageSelected } = usePackagesList();

@@ -10,7 +10,7 @@ import { WidgetNew } from 'ui/common/components/layout/Widget/WidgetNew/WidgetNe
 import { WidgetContent } from 'ui/common/components/layout/Widget/WidgetContent/WidgetContent';
 import { WidgetSubHeader } from 'ui/common/components/typography/WidgetSubHeader/WidgetSubHeader';
 import { WidgetHeader } from 'ui/common/components/typography/WidgetHeader/WidgetHeader';
-import styles from 'ui/Packages/Admin/packages.module.scss';
+
 import { WidgetDelivery } from 'ui/common/components/layout/Widget/WidgetDelivery/WidgetDelivery';
 
 import { WidgetAttention } from 'ui/common/components/layout/Widget/WidgetAttention/WidgetAttention';
@@ -24,6 +24,8 @@ import {
   IN_DELIVERY_TEXT_HEADER,
   NEW_TODAY_TEXT_HEADER,
 } from 'ui/Packages/Admin/components/PackagesWidgets/packagesWidgets.dictionary';
+
+import styles from 'ui/Packages/Admin/packages.module.scss';
 
 export const PackagesWidgets = async () => {
   const {

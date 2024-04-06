@@ -1,9 +1,10 @@
 import React from 'react';
 
-import styles from 'ui/Login/login.module.scss';
 import { ContainerBox } from 'ui/common/components/layout/ContainerBox/ContainerBox';
 import { TextLogo } from 'ui/common/components/typography/TextLogo/TextLogo';
 import { LoginForm } from 'ui/Login/components/LoginForm/loginForm';
+
+import styles from 'ui/Login/login.module.scss';
 
 export const LoginView = () => (
   <main

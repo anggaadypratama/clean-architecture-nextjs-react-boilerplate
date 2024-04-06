@@ -5,11 +5,14 @@ import { RxDotsVertical } from 'react-icons/rx';
 import React from 'react';
 
 import { APP_ADMIN_ROUTES } from 'ui/common/navigation/routes';
-import styles from 'ui/Clients/Admin/Clients/components/ClientsList/clientsList.module.scss';
+
 import { ListRow } from 'ui/common/components/tables/ListRow/ListRow';
 
 import { useClientsList } from 'ui/Clients/Admin/Clients/components/ClientsList/clientsList.hooks';
 
+import styles from 'ui/Clients/Admin/Clients/components/ClientsList/clientsList.module.scss';
+
+/** @scope src/ui/Clients/Admin/Clients */
 export const ClientsList = async () => {
   const { clients } = await useClientsList();
 

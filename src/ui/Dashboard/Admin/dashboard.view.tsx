@@ -10,7 +10,6 @@ import { getPackageStatusIcon } from 'ui/Packages/Admin/packages.partials';
 import { useDashboard } from 'ui/Dashboard/Admin/dashboard.hooks';
 import { DashboardMessage } from 'ui/Dashboard/Admin/components/DashboardMessage/DashboardMessage';
 
-import styles from 'ui/Dashboard/Admin/dashboard.module.scss';
 import { latoBold } from 'ui/common/assets/fonts/fonts';
 import { pluralizePackages } from 'ui/Dashboard/Admin/dashboard.helpers';
 import { WidgetNeutral } from 'ui/common/components/layout/Widget/WidgetNeutral/WidgetNeutral';
@@ -29,6 +28,8 @@ import {
   RECENT_PACKAGES_IN_TRANSIT_HEADER_TEXT,
   REQUIRES_ATTENTION_TEXT,
 } from 'ui/Dashboard/Admin/dashboard.dictionary';
+
+import styles from 'ui/Dashboard/Admin/dashboard.module.scss';
 
 export const DashboardView = async () => {
   const {
